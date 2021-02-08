@@ -1,33 +1,937 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/cryoem.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/cryoem.owl>
-
-
-
+Annotation(dce:contributor "Irene Sanchez Lopez")
+Annotation(dce:creator "Carlos Oscar Sorzano")
+Annotation(dce:description "Ontology that describes data types and image processing operations in Cryo Electron Microscopy of Single Particles"^^xsd:string)
 Annotation(dce:title "Cryo Electron Microscopy ontology")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
-Annotation(dce:description "None")
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/3.0/>)
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CRYOEM_00000000>))
+Declaration(Class(obo:CRYOEM_0000001))
+Declaration(Class(obo:CRYOEM_0000002))
+Declaration(Class(obo:CRYOEM_0000003))
+Declaration(Class(obo:CRYOEM_0000004))
+Declaration(Class(obo:CRYOEM_0000005))
+Declaration(Class(obo:CRYOEM_0000006))
+Declaration(Class(obo:CRYOEM_0000007))
+Declaration(Class(obo:CRYOEM_0000008))
+Declaration(Class(obo:CRYOEM_0000009))
+Declaration(Class(obo:CRYOEM_0000010))
+Declaration(Class(obo:CRYOEM_0000011))
+Declaration(Class(obo:CRYOEM_0000012))
+Declaration(Class(obo:CRYOEM_0000013))
+Declaration(Class(obo:CRYOEM_0000014))
+Declaration(Class(obo:CRYOEM_0000015))
+Declaration(Class(obo:CRYOEM_0000016))
+Declaration(Class(obo:CRYOEM_0000017))
+Declaration(Class(obo:CRYOEM_0000018))
+Declaration(Class(obo:CRYOEM_0000019))
+Declaration(Class(obo:CRYOEM_0000020))
+Declaration(Class(obo:CRYOEM_0000021))
+Declaration(Class(obo:CRYOEM_0000022))
+Declaration(Class(obo:CRYOEM_0000023))
+Declaration(Class(obo:CRYOEM_0000024))
+Declaration(Class(obo:CRYOEM_0000025))
+Declaration(Class(obo:CRYOEM_0000026))
+Declaration(Class(obo:CRYOEM_0000027))
+Declaration(Class(obo:CRYOEM_0000028))
+Declaration(Class(obo:CRYOEM_0000029))
+Declaration(Class(obo:CRYOEM_0000030))
+Declaration(Class(obo:CRYOEM_0000031))
+Declaration(Class(obo:CRYOEM_0000032))
+Declaration(Class(obo:CRYOEM_0000033))
+Declaration(Class(obo:CRYOEM_0000034))
+Declaration(Class(obo:CRYOEM_0000035))
+Declaration(Class(obo:CRYOEM_0000036))
+Declaration(Class(obo:CRYOEM_0000037))
+Declaration(Class(obo:CRYOEM_0000038))
+Declaration(Class(obo:CRYOEM_0000039))
+Declaration(Class(obo:CRYOEM_0000040))
+Declaration(Class(obo:CRYOEM_0000041))
+Declaration(Class(obo:CRYOEM_0000042))
+Declaration(Class(obo:CRYOEM_0000043))
+Declaration(Class(obo:CRYOEM_0000044))
+Declaration(Class(obo:CRYOEM_0000045))
+Declaration(Class(obo:CRYOEM_0000046))
+Declaration(Class(obo:CRYOEM_0000047))
+Declaration(Class(obo:CRYOEM_0000048))
+Declaration(Class(obo:CRYOEM_0000049))
+Declaration(Class(obo:CRYOEM_0000050))
+Declaration(Class(obo:CRYOEM_0000051))
+Declaration(Class(obo:CRYOEM_0000052))
+Declaration(Class(obo:CRYOEM_0000053))
+Declaration(Class(obo:CRYOEM_0000054))
+Declaration(Class(obo:CRYOEM_0000055))
+Declaration(Class(obo:CRYOEM_0000056))
+Declaration(Class(obo:CRYOEM_0000057))
+Declaration(Class(obo:CRYOEM_0000058))
+Declaration(Class(obo:CRYOEM_0000059))
+Declaration(Class(obo:CRYOEM_0000060))
+Declaration(Class(obo:CRYOEM_0000061))
+Declaration(Class(obo:CRYOEM_0000062))
+Declaration(Class(obo:CRYOEM_0000063))
+Declaration(Class(obo:CRYOEM_0000064))
+Declaration(Class(obo:CRYOEM_0000065))
+Declaration(Class(obo:CRYOEM_0000066))
+Declaration(Class(obo:CRYOEM_0000067))
+Declaration(Class(obo:CRYOEM_0000068))
+Declaration(Class(obo:CRYOEM_0000069))
+Declaration(Class(obo:CRYOEM_0000070))
+Declaration(Class(obo:CRYOEM_0000071))
+Declaration(Class(obo:CRYOEM_0000072))
+Declaration(Class(obo:CRYOEM_0000073))
+Declaration(Class(obo:CRYOEM_0000074))
+Declaration(Class(obo:CRYOEM_0000075))
+Declaration(Class(obo:CRYOEM_0000076))
+Declaration(Class(obo:CRYOEM_0000077))
+Declaration(Class(obo:CRYOEM_0000078))
+Declaration(Class(obo:CRYOEM_0000079))
+Declaration(Class(obo:CRYOEM_0000080))
+Declaration(Class(obo:CRYOEM_0000081))
+Declaration(Class(obo:CRYOEM_0000082))
+Declaration(Class(obo:CRYOEM_0000083))
+Declaration(Class(obo:CRYOEM_0000084))
+Declaration(Class(obo:CRYOEM_0000085))
+Declaration(Class(obo:CRYOEM_0000086))
+Declaration(Class(obo:CRYOEM_0000087))
+Declaration(Class(obo:CRYOEM_0000088))
+Declaration(Class(obo:CRYOEM_0000089))
+Declaration(Class(obo:CRYOEM_0000090))
+Declaration(Class(obo:CRYOEM_0000091))
+Declaration(Class(obo:CRYOEM_0000092))
+Declaration(Class(obo:CRYOEM_0000093))
+Declaration(Class(obo:CRYOEM_0000094))
+Declaration(Class(obo:CRYOEM_0000095))
+Declaration(Class(obo:CRYOEM_0000096))
+Declaration(Class(obo:CRYOEM_0000097))
+Declaration(Class(obo:CRYOEM_0000098))
+Declaration(Class(obo:CRYOEM_0000099))
+Declaration(Class(obo:CRYOEM_0000100))
+Declaration(Class(obo:CRYOEM_0000101))
+Declaration(Class(obo:CRYOEM_0000102))
+Declaration(Class(obo:CRYOEM_0000103))
+Declaration(Class(obo:CRYOEM_0000104))
+Declaration(Class(obo:CRYOEM_0000105))
+Declaration(Class(obo:CRYOEM_0000106))
+Declaration(Class(obo:CRYOEM_0000107))
+Declaration(Class(obo:CRYOEM_0000108))
+Declaration(Class(obo:CRYOEM_0000109))
+Declaration(Class(obo:CRYOEM_0000110))
+Declaration(Class(obo:CRYOEM_0000111))
+Declaration(AnnotationProperty(obo:CRYOEM_0000112))
+Declaration(AnnotationProperty(obo:CRYOEM_0000113))
+Declaration(AnnotationProperty(obo:CRYOEM_0000114))
+Declaration(AnnotationProperty(obo:CRYOEM_0000115))
+Declaration(AnnotationProperty(obo:CRYOEM_0000116))
+Declaration(AnnotationProperty(obo:CRYOEM_0000117))
+Declaration(AnnotationProperty(obo:CRYOEM_0000118))
+Declaration(AnnotationProperty(obo:CRYOEM_0000119))
+Declaration(AnnotationProperty(obo:CRYOEM_0000120))
+Declaration(AnnotationProperty(obo:CRYOEM_0000121))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(dce:contributor))
+Declaration(AnnotationProperty(dce:creator))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(rdfs:comment))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: obo:CRYOEM_0000112 (hasAcquisition)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000112 "hasAcquisition")
+
+# Annotation Property: obo:CRYOEM_0000113 (hasCoordinate)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000113 "hasCoordinate")
+
+# Annotation Property: obo:CRYOEM_0000114 (hasInput)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000114 "hasInput")
+
+# Annotation Property: obo:CRYOEM_0000115 (hasOutput)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000115 "hasOutput")
+
+# Annotation Property: obo:CRYOEM_0000116 (hasRelation)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000116 "hasRelation")
+
+# Annotation Property: obo:CRYOEM_0000117 (hasRepresentative)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000117 "hasRepresentative")
+
+# Annotation Property: obo:CRYOEM_0000118 (hasTransform)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000118 "hasTransform")
+
+# Annotation Property: obo:CRYOEM_0000119 (hasVolume)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000119 "hasVolume")
+
+# Annotation Property: obo:CRYOEM_0000120 (isASetOf)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000120 "isASetOf")
+
+# Annotation Property: obo:CRYOEM_0000121 (hasCTF)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000121 "hasCTF")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> (has_obo_format_version)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> "has_obo_format_version")
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/CRYOEM_00000000>
+# Class: obo:CRYOEM_0000001 (EMThing)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CRYOEM_00000000> "root node"@en)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000001 "EMThing")
+
+# Class: obo:CRYOEM_0000002 (EMObject)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000002 "EMObject")
+SubClassOf(obo:CRYOEM_0000002 obo:CRYOEM_0000001)
+
+# Class: obo:CRYOEM_0000003 (EMProtocol)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000003 "EMProtocol")
+SubClassOf(obo:CRYOEM_0000003 obo:CRYOEM_0000001)
+
+# Class: obo:CRYOEM_0000004 (Acquisition)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000004 "Contains acquisition parameters such as magnification, voltage, spherical aberration, amplitude contrast, dose per frame and inital dose, optics group, and beam tilt")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000004 "Acquisition"^^xsd:string)
+SubClassOf(obo:CRYOEM_0000004 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000005 (AtomStruct)
+
+AnnotationAssertion(obo:CRYOEM_0000119 obo:CRYOEM_0000005 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000005 "File representing an atomic structure (PDB, mmCIF, ...)")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000005 "AtomStruct")
+SubClassOf(obo:CRYOEM_0000005 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000006 (Coordinate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000006 "x,y coordinate of a particle in a micrograph")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000006 "Coordinate")
+SubClassOf(obo:CRYOEM_0000006 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000007 (CTFModel)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000007 "Contains a minimum description of the Microscope Contrast Transfer Function with parameters like the two defoci, the defocus angle, phase shift and an image of the Power Spectrum Density")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000007 "CTFModel")
+SubClassOf(obo:CRYOEM_0000007 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000008 (DefocusGroup)
+
+AnnotationAssertion(obo:CRYOEM_0000116 obo:CRYOEM_0000008 obo:CRYOEM_0000072)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000008 "Defines a min and maximum defocus that belongs to this group.")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000008 "DefocusGroup")
+SubClassOf(obo:CRYOEM_0000008 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000009 (EMSet)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000009 "EMSet")
+SubClassOf(obo:CRYOEM_0000009 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000010 (FSC)
+
+AnnotationAssertion(obo:CRYOEM_0000119 obo:CRYOEM_0000010 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000010 "Fourier Shell Correlation")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000010 "FSC")
+SubClassOf(obo:CRYOEM_0000010 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000011 (Image)
+
+AnnotationAssertion(obo:CRYOEM_0000118 obo:CRYOEM_0000011 obo:CRYOEM_0000014)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000011 "It has an index and filename to point to the physical image. Contains sampling rate. It refers to 2D or 3D.")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000011 "Image")
+SubClassOf(obo:CRYOEM_0000011 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000012 (NormalMode)
+
+AnnotationAssertion(obo:CRYOEM_0000116 obo:CRYOEM_0000012 "http://purl.obolibrary.org/obo/CRYOEM_0000005")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000012 "This is the result of a normal mode analysis on an atomic or pseudoatomic structure")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000012 "NormalMode")
+SubClassOf(obo:CRYOEM_0000012 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000013 (Sequence)
+
+AnnotationAssertion(obo:CRYOEM_0000116 obo:CRYOEM_0000013 "http://purl.obolibrary.org/obo/CRYOEM_0000005")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000013 "Protein sequence")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000013 "Sequence")
+SubClassOf(obo:CRYOEM_0000013 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000014 (Transform)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000014 "Transformation matrix. It is valid for images and volumes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000014 "Transform")
+SubClassOf(obo:CRYOEM_0000014 obo:CRYOEM_0000002)
+
+# Class: obo:CRYOEM_0000015 (Prot2D)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000015 "Prot2D")
+SubClassOf(obo:CRYOEM_0000015 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000016 (Prot3D)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000016 "Prot3D")
+SubClassOf(obo:CRYOEM_0000016 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000017 (ProtCoords)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000017 "ProtCoords")
+SubClassOf(obo:CRYOEM_0000017 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000018 (ProtImport)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000018 "Any import protocol")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000018 "ProtImport")
+SubClassOf(obo:CRYOEM_0000018 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000019 (ProtMicrographs)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000019 "Any operation on a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000019 "ProtMicrographs")
+SubClassOf(obo:CRYOEM_0000019 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000020 (ProtMovies)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000020 obo:CRYOEM_0000096)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000020 "Any protocol that takes a set of movies")
+AnnotationAssertion(obo:IAO_0000118 obo:CRYOEM_0000020 "ProtProcessMovies")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000020 "ProtMovies")
+SubClassOf(obo:CRYOEM_0000020 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000021 (ProtOther)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000021 "ProtOther")
+SubClassOf(obo:CRYOEM_0000021 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000022 (ProtSets)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000022 "Operations on sets")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000022 "ProtSets")
+SubClassOf(obo:CRYOEM_0000022 obo:CRYOEM_0000003)
+
+# Class: obo:CRYOEM_0000023 (SetOfAtomStructs)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000023 "SetOfAtomStructs")
+SubClassOf(obo:CRYOEM_0000023 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000024 (SetOfClasses)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000024 "This is a set of classes 2D, 3D or Vol")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000024 "SetOfClasses")
+SubClassOf(obo:CRYOEM_0000024 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000025 (SetOfCoordinates)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000025 obo:CRYOEM_0000006)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000025 "SetOfCoordinates")
+SubClassOf(obo:CRYOEM_0000025 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000026 (SetOfCTF)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000026 obo:CRYOEM_0000007)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000026 "SetOfCTF")
+SubClassOf(obo:CRYOEM_0000026 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000027 (SetOfDefocusGroup)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000027 obo:CRYOEM_0000008)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000027 "SetOfDefocusGroup")
+SubClassOf(obo:CRYOEM_0000027 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000028 (SetOfFSCs)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000028 obo:CRYOEM_0000010)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000028 "SetOfFSCs")
+SubClassOf(obo:CRYOEM_0000028 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000029 (SetOfImages)
+
+AnnotationAssertion(obo:CRYOEM_0000112 obo:CRYOEM_0000029 obo:CRYOEM_0000004)
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000029 obo:CRYOEM_0000011)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000029 "SetOfImages")
+SubClassOf(obo:CRYOEM_0000029 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000030 (SetOfNormalModes)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000030 obo:CRYOEM_0000012)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000030 "SetOfNormalModes")
+SubClassOf(obo:CRYOEM_0000030 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000031 (SetOfSequences)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000031 obo:CRYOEM_0000013)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000031 "SetOfSequences")
+SubClassOf(obo:CRYOEM_0000031 obo:CRYOEM_0000009)
+
+# Class: obo:CRYOEM_0000032 (Image2D)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000032 "Image2D")
+SubClassOf(obo:CRYOEM_0000032 obo:CRYOEM_0000011)
+
+# Class: obo:CRYOEM_0000033 (Image3D)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000033 "Image3D")
+SubClassOf(obo:CRYOEM_0000033 obo:CRYOEM_0000011)
+
+# Class: obo:CRYOEM_0000034 (ProtCreateMask2D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000034 "http://purl.obolibrary.org/obo/CRYOEM_0000071")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000034 "Creates a 2D mask")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000034 "ProtCreateMask2D")
+SubClassOf(obo:CRYOEM_0000034 obo:CRYOEM_0000015)
+
+# Class: obo:CRYOEM_0000035 (ProtParticles)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000035 "Protocols dealing with particles and restricted to 2D")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000035 "ProtParticles")
+SubClassOf(obo:CRYOEM_0000035 obo:CRYOEM_0000015)
+
+# Class: obo:CRYOEM_0000036 (ProtAnalysis3D)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000036 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000036 "Performs any 3D analysis on a set of particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000036 "ProtAnalysis3D")
+SubClassOf(obo:CRYOEM_0000036 obo:CRYOEM_0000016)
+
+# Class: obo:CRYOEM_0000037 (ProtFitting3D)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000037 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000037 "http://purl.obolibrary.org/obo/CRYOEM_0000005")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000037 "ProtFitting3D")
+SubClassOf(obo:CRYOEM_0000037 obo:CRYOEM_0000016)
+
+# Class: obo:CRYOEM_0000038 (ProtVolume)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000038 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000038 "Protocols whose main input is a volume or a set of volumes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000038 "ProtVolume")
+SubClassOf(obo:CRYOEM_0000038 obo:CRYOEM_0000016)
+
+# Class: obo:CRYOEM_0000039 (ProtExtractCoords)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000039 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000039 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000039 "Extracts coordinates from a set of particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000039 "ProtExtractCoords")
+SubClassOf(obo:CRYOEM_0000039 obo:CRYOEM_0000017)
+
+# Class: obo:CRYOEM_0000040 (ProtParticlePicking)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000040 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000040 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000040 "Takes a set of micrographs and produces a set of coordinates with particle candidates")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000040 "ProtParticlePicking")
+SubClassOf(obo:CRYOEM_0000040 obo:CRYOEM_0000017)
+
+# Class: obo:CRYOEM_0000041 (ProtPickingDifference)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000041 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000041 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000041 "Produces a difference between two sets of coordinates")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000041 "ProtPickingDifference")
+SubClassOf(obo:CRYOEM_0000041 obo:CRYOEM_0000017)
+
+# Class: obo:CRYOEM_0000042 (ProtImportAverages)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000042 obo:CRYOEM_0000094)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000042 "Imports a set of averages")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000042 "ProtImportAverages")
+SubClassOf(obo:CRYOEM_0000042 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000043 (ProtImportCoordinates)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000043 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000043 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000043 "Produces a set of coordinates")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000043 "ProtImportCoordinates")
+SubClassOf(obo:CRYOEM_0000043 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000044 (ProtImportCTF)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000044 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000044 obo:CRYOEM_0000026)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000044 "Imports a set of CTFs and assigns it to a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000044 "ProtImportCTF")
+SubClassOf(obo:CRYOEM_0000044 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000045 (ProtImportMask)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000045 obo:CRYOEM_0000071)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000045 obo:CRYOEM_0000076)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000045 "Imports a 2D or 3D mask.")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000045 "ProtImportMask")
+SubClassOf(obo:CRYOEM_0000045 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000046 (ProtImportMicrographs)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000046 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000046 "Imports a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000046 "ProtImportMicrographs")
+SubClassOf(obo:CRYOEM_0000046 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000047 (ProtImportMicrographsTiltPairs)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000047 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000047 "Import micrographs tilt pairs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000047 "ProtImportMicrographsTiltPairs")
+SubClassOf(obo:CRYOEM_0000047 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000048 (ProtImportMovies)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000048 obo:CRYOEM_0000096)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000048 "Imports a set of movies")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000048 "ProtImportMovies")
+SubClassOf(obo:CRYOEM_0000048 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000049 (ProtImportParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000049 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000049 "Import a set of particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000049 "ProtImportParticles")
+SubClassOf(obo:CRYOEM_0000049 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000050 (ProtImportPdb)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000050 "http://purl.obolibrary.org/obo/CRYOEM_0000005")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000050 "Imports an atomic structure")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000050 "ProtImportPdb")
+SubClassOf(obo:CRYOEM_0000050 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000051 (ProtImportSequence)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000051 obo:CRYOEM_0000013)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000051 "Imports sequence")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000051 "ProtImportSequence")
+SubClassOf(obo:CRYOEM_0000051 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000052 (ProtImportVolumes)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000052 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000052 "Imports a volume")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000052 "ProtImportVolumes")
+SubClassOf(obo:CRYOEM_0000052 obo:CRYOEM_0000018)
+
+# Class: obo:CRYOEM_0000053 (ProtCTFAssign)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000053 obo:CRYOEM_0000026)
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000053 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000053 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000053 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000053 "Assigns an already computed set of CTFs to a set of Micrographs or Particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000053 "ProtCTFAssign")
+SubClassOf(obo:CRYOEM_0000053 obo:CRYOEM_0000019)
+
+# Class: obo:CRYOEM_0000054 (ProtCTFMicrographs)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000054 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000054 obo:CRYOEM_0000026)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000054 "Computes the CTF of a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000054 "ProtCTFMicrographs")
+SubClassOf(obo:CRYOEM_0000054 obo:CRYOEM_0000019)
+
+# Class: obo:CRYOEM_0000055 (ProtPreprocessMicrographs)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000055 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000055 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000055 "Operations like cropping, resizing, inverting contrast, ...")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000055 "ProtPreprocessMicrographs")
+SubClassOf(obo:CRYOEM_0000055 obo:CRYOEM_0000019)
+
+# Class: obo:CRYOEM_0000056 (ProtAlignMovies)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000056 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000056 "Aligns a set of movies into a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000056 "ProtAlignMovies")
+SubClassOf(obo:CRYOEM_0000056 obo:CRYOEM_0000020)
+
+# Class: obo:CRYOEM_0000057 (ProtAverageFrames)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000057 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000057 "Computes the average of a set of movies into a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000057 "ProtAverageFrames")
+SubClassOf(obo:CRYOEM_0000057 obo:CRYOEM_0000020)
+
+# Class: obo:CRYOEM_0000058 (ProtExtractMovieParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000058 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000058 "http://purl.obolibrary.org/obo/CRYOEM_0000106")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000058 "Extracts a set of MovieParticles from a set of Movies and a set of Particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000058 "ProtExtractMovieParticles")
+SubClassOf(obo:CRYOEM_0000058 obo:CRYOEM_0000020)
+
+# Class: obo:CRYOEM_0000059 (ProtMovieAssignGain)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000059 obo:CRYOEM_0000096)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000059 "Assigns a gain to a set of movies")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000059 "ProtMovieAssignGain")
+SubClassOf(obo:CRYOEM_0000059 obo:CRYOEM_0000020)
+
+# Class: obo:CRYOEM_0000060 (ProtClassesConsensus)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000060 obo:CRYOEM_0000024)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000060 obo:CRYOEM_0000024)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000060 "Creates a consensus of a set of classes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000060 "ProtClassesConsensus")
+SubClassOf(obo:CRYOEM_0000060 obo:CRYOEM_0000021)
+
+# Class: obo:CRYOEM_0000061 (ProtCreateFSC)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000061 obo:CRYOEM_0000010)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000061 "Creates an FSC")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000061 "ProtCreateFSC")
+SubClassOf(obo:CRYOEM_0000061 obo:CRYOEM_0000021)
+
+# Class: obo:CRYOEM_0000062 (ProtSplitSet)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000062 "Splits a set into several pieces")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000062 "ProtSplitSet")
+SubClassOf(obo:CRYOEM_0000062 obo:CRYOEM_0000022)
+
+# Class: obo:CRYOEM_0000063 (ProtSubSet)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000063 "Computes a subset of a set")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000063 "ProtSubSet")
+SubClassOf(obo:CRYOEM_0000063 obo:CRYOEM_0000022)
+
+# Class: obo:CRYOEM_0000064 (ProtUnionSet)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000064 "Computes the union of several sets")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000064 "ProtUnionSet")
+SubClassOf(obo:CRYOEM_0000064 obo:CRYOEM_0000022)
+
+# Class: obo:CRYOEM_0000065 (SetOfClasses2D)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000065 "http://purl.obolibrary.org/obo/CRYOEM_0000104")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000065 "SetOfClasses2D")
+SubClassOf(obo:CRYOEM_0000065 obo:CRYOEM_0000024)
+
+# Class: obo:CRYOEM_0000066 (SetOfClasses3D)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000066 "http://purl.obolibrary.org/obo/CRYOEM_0000105")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000066 "SetOfClasses3D")
+SubClassOf(obo:CRYOEM_0000066 obo:CRYOEM_0000024)
+
+# Class: obo:CRYOEM_0000067 (SetOfClassesVol)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000067 obo:CRYOEM_0000107)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000067 "SetOfClassesVol")
+SubClassOf(obo:CRYOEM_0000067 obo:CRYOEM_0000024)
+
+# Class: obo:CRYOEM_0000068 (SetOfImages2D)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000068 obo:CRYOEM_0000032)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000068 "SetOfImages2D")
+SubClassOf(obo:CRYOEM_0000068 obo:CRYOEM_0000029)
+
+# Class: obo:CRYOEM_0000069 (SetOfImages3D)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000069 obo:CRYOEM_0000033)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000069 "SetOfImages3D")
+SubClassOf(obo:CRYOEM_0000069 obo:CRYOEM_0000029)
+
+# Class: obo:CRYOEM_0000070 (Average)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000070 "Average")
+SubClassOf(obo:CRYOEM_0000070 obo:CRYOEM_0000032)
+
+# Class: obo:CRYOEM_0000071 (Mask)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000071 "Mask 2D")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000071 "Mask")
+SubClassOf(obo:CRYOEM_0000071 obo:CRYOEM_0000032)
+
+# Class: obo:CRYOEM_0000072 (Micrograph)
+
+AnnotationAssertion(obo:CRYOEM_0000112 obo:CRYOEM_0000072 obo:CRYOEM_0000004)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000072 "Micrograph")
+SubClassOf(obo:CRYOEM_0000072 obo:CRYOEM_0000032)
+
+# Class: obo:CRYOEM_0000073 (Movie)
+
+AnnotationAssertion(obo:CRYOEM_0000112 obo:CRYOEM_0000073 obo:CRYOEM_0000004)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000073 "Movie")
+SubClassOf(obo:CRYOEM_0000073 obo:CRYOEM_0000032)
+
+# Class: obo:CRYOEM_0000074 (Particle)
+
+AnnotationAssertion(obo:CRYOEM_0000112 obo:CRYOEM_0000074 obo:CRYOEM_0000004)
+AnnotationAssertion(obo:CRYOEM_0000113 obo:CRYOEM_0000074 obo:CRYOEM_0000006)
+AnnotationAssertion(obo:CRYOEM_0000118 obo:CRYOEM_0000074 obo:CRYOEM_0000014)
+AnnotationAssertion(obo:CRYOEM_0000121 obo:CRYOEM_0000074 obo:CRYOEM_0000007)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000074 "Particle")
+SubClassOf(obo:CRYOEM_0000074 obo:CRYOEM_0000032)
+
+# Class: obo:CRYOEM_0000075 (Volume)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000075 "Map")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000075 "Volume")
+SubClassOf(obo:CRYOEM_0000075 obo:CRYOEM_0000033)
+
+# Class: obo:CRYOEM_0000076 (VolumeMask)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000076 "Mask 3D")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000076 "VolumeMask")
+SubClassOf(obo:CRYOEM_0000076 obo:CRYOEM_0000033)
+
+# Class: obo:CRYOEM_0000077 (ProtCreateMask)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000077 "Special protocol used in batch mode")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000077 "ProtCreateMask")
+SubClassOf(obo:CRYOEM_0000077 obo:CRYOEM_0000034)
+
+# Class: obo:CRYOEM_0000078 (ProtAnalysis2D)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000078 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000078 "Performs some other kind of 2D analysis")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000078 "ProtAnalysis2D")
+SubClassOf(obo:CRYOEM_0000078 obo:CRYOEM_0000035)
+
+# Class: obo:CRYOEM_0000079 (ProtExtractParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000079 obo:CRYOEM_0000025)
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000079 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000079 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000079 "Takes a set of micrographs and coordinates and extract the particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000079 "ProtExtractParticles")
+SubClassOf(obo:CRYOEM_0000079 obo:CRYOEM_0000035)
+
+# Class: obo:CRYOEM_0000080 (ProtClassify3D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000080 obo:CRYOEM_0000066)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000080 "ProtClassify3D")
+SubClassOf(obo:CRYOEM_0000080 obo:CRYOEM_0000036)
+
+# Class: obo:CRYOEM_0000081 (ProtInitialVolume)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000081 obo:CRYOEM_0000094)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000081 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000081 obo:CRYOEM_0000098)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000081 "The input may be a set of particles or a set of averages (which can be regarded as a summary of a set of particles)")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000081 "ProtInitialVolume")
+SubClassOf(obo:CRYOEM_0000081 obo:CRYOEM_0000036)
+
+# Class: obo:CRYOEM_0000082 (ProtReconstruct3D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000082 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000082 "Reconstruct a map from a set of particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000082 "ProtReconstruct3D")
+SubClassOf(obo:CRYOEM_0000082 obo:CRYOEM_0000036)
+
+# Class: obo:CRYOEM_0000083 (ProtRefine3D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000083 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000083 "Refine the angular alignment of a set of particles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000083 "ProtRefine3D")
+SubClassOf(obo:CRYOEM_0000083 obo:CRYOEM_0000036)
+
+# Class: obo:CRYOEM_0000084 (ProtAlignVolume)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000084 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000084 "Align volumes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000084 "ProtAlignVolume")
+SubClassOf(obo:CRYOEM_0000084 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000085 (ProtCreateMask3D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000085 obo:CRYOEM_0000076)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000085 "Create a 3D mask")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000085 "ProtCreateMask3D")
+SubClassOf(obo:CRYOEM_0000085 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000086 (ProtFilterVolumes)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000086 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000086 "Filter volumes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000086 "ProtFilterVolumes")
+SubClassOf(obo:CRYOEM_0000086 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000087 (ProtMaskVolumes)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000087 "http://purl.obolibrary.org/obo/CRYOEM_0000076")
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000087 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000087 "Apply a mask to a volume (the mask can be defined by a description, for instance, a geometrical object)")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000087 "ProtMaskVolumes")
+SubClassOf(obo:CRYOEM_0000087 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000088 (ProtPreprocessVolumes)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000088 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000088 "Preprocess volumes (filters, ...)")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000088 "ProtPreprocessVolumes")
+SubClassOf(obo:CRYOEM_0000088 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000089 (ProtOperateVolumes)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000089 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000089 "Performs an operation with one or two volumes (calculator)")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000089 "ProtOperateVolumes")
+SubClassOf(obo:CRYOEM_0000089 obo:CRYOEM_0000038)
+
+# Class: obo:CRYOEM_0000090 (ProtParticlePickingAuto)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000090 "A subclass of particle picking algorithms that can perform this operation completely automatically.")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000090 "ProtParticlePickingAuto")
+SubClassOf(obo:CRYOEM_0000090 obo:CRYOEM_0000040)
+
+# Class: obo:CRYOEM_0000091 (ProtImportCoordinatesPairs)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000091 "Importing coordinates for tilt pairs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000091 "ProtImportCoordinatesPairs")
+SubClassOf(obo:CRYOEM_0000091 obo:CRYOEM_0000043)
+
+# Class: obo:CRYOEM_0000092 (ProtSubSetByMic)
+
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000092 obo:CRYOEM_0000095)
+AnnotationAssertion(obo:CRYOEM_0000114 obo:CRYOEM_0000092 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000092 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000092 "Computes a subset of particles according to a set of micrographs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000092 "ProtSubSetByMic")
+SubClassOf(obo:CRYOEM_0000092 obo:CRYOEM_0000063)
+
+# Class: obo:CRYOEM_0000093 (ProtUserSubSet)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000093 "Computes a subset of another set by a graphical intervention of the user")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000093 "ProtUserSubSet")
+SubClassOf(obo:CRYOEM_0000093 obo:CRYOEM_0000063)
+
+# Class: obo:CRYOEM_0000094 (SetOfAverages)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000094 obo:CRYOEM_0000074)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000094 "This is a set of 2D averages")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000094 "SetOfAverages")
+SubClassOf(obo:CRYOEM_0000094 obo:CRYOEM_0000068)
+
+# Class: obo:CRYOEM_0000095 (SetOfMicrographs)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000095 obo:CRYOEM_0000072)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000095 "SetOfMicrographs")
+SubClassOf(obo:CRYOEM_0000095 obo:CRYOEM_0000068)
+
+# Class: obo:CRYOEM_0000096 (SetOfMovies)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000096 obo:CRYOEM_0000073)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000096 "SetOfMovies")
+SubClassOf(obo:CRYOEM_0000096 obo:CRYOEM_0000068)
+
+# Class: obo:CRYOEM_0000097 (SetOfParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000097 obo:CRYOEM_0000074)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000097 "SetOfParticles")
+SubClassOf(obo:CRYOEM_0000097 obo:CRYOEM_0000068)
+
+# Class: obo:CRYOEM_0000098 (SetOfVolumes)
+
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000098 "SetOfVolumes")
+SubClassOf(obo:CRYOEM_0000098 obo:CRYOEM_0000069)
+
+# Class: obo:CRYOEM_0000099 (MovieParticle)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000099 "This is a set of images corresponding to a single particle in each ones of the frames.")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000099 "MovieParticle")
+SubClassOf(obo:CRYOEM_0000099 obo:CRYOEM_0000074)
+
+# Class: obo:CRYOEM_0000100 (ProtAlign2D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000100 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000100 "Aligns a set of 2D images")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000100 "ProtAlign2D")
+SubClassOf(obo:CRYOEM_0000100 obo:CRYOEM_0000078)
+
+# Class: obo:CRYOEM_0000101 (ProtClassify2D)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000101 obo:CRYOEM_0000065)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000101 "Classifies a set of particles in 2D classes")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000101 "ProtClassify2D")
+SubClassOf(obo:CRYOEM_0000101 obo:CRYOEM_0000078)
+
+# Class: obo:CRYOEM_0000102 (ProtProcessParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000115 obo:CRYOEM_0000102 obo:CRYOEM_0000097)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000102 "Any protocol that applies a transformation to a SetOfParticles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000102 "ProtProcessParticles")
+SubClassOf(obo:CRYOEM_0000102 obo:CRYOEM_0000078)
+
+# Class: obo:CRYOEM_0000103 (ProtExtractParticlesPair)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000103 "Extracts particles from a set of tilt pairs")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000103 "ProtExtractParticlesPair")
+SubClassOf(obo:CRYOEM_0000103 obo:CRYOEM_0000079)
+
+# Class: obo:CRYOEM_0000104 (Class2D)
+
+AnnotationAssertion(obo:CRYOEM_0000117 obo:CRYOEM_0000104 obo:CRYOEM_0000070)
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000104 obo:CRYOEM_0000074)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000104 "This is a set of particles and its 2D representative")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000104 "Class2D")
+SubClassOf(obo:CRYOEM_0000104 obo:CRYOEM_0000097)
+
+# Class: obo:CRYOEM_0000105 (Class3D)
+
+AnnotationAssertion(obo:CRYOEM_0000117 obo:CRYOEM_0000105 "http://purl.obolibrary.org/obo/CRYOEM_0000075")
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000105 obo:CRYOEM_0000074)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000105 "This is a set of particles and its 3D representative")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000105 "Class3D")
+SubClassOf(obo:CRYOEM_0000105 obo:CRYOEM_0000097)
+
+# Class: obo:CRYOEM_0000106 (SetOfMovieParticles)
+
+AnnotationAssertion(obo:CRYOEM_0000120 obo:CRYOEM_0000106 obo:CRYOEM_0000099)
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000106 "SetOfMovieParticles")
+SubClassOf(obo:CRYOEM_0000106 obo:CRYOEM_0000097)
+
+# Class: obo:CRYOEM_0000107 (ClassVol)
+
+AnnotationAssertion(obo:CRYOEM_0000117 obo:CRYOEM_0000107 obo:CRYOEM_0000075)
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000107 "This is a set of volumes and its 3D representative")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000107 "ClassVol")
+SubClassOf(obo:CRYOEM_0000107 obo:CRYOEM_0000098)
+
+# Class: obo:CRYOEM_0000108 (ProtAlignmentAssign)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000108 "Assigns a 2D alignment to a SetOfParticles")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000108 "ProtAlignmentAssign")
+SubClassOf(obo:CRYOEM_0000108 obo:CRYOEM_0000100)
+
+# Class: obo:CRYOEM_0000109 (ProtFilterParticles)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000109 "Applies a filter")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000109 "ProtFilterParticles")
+SubClassOf(obo:CRYOEM_0000109 obo:CRYOEM_0000102)
+
+# Class: obo:CRYOEM_0000110 (ProtMaskParticles)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000110 "Applies a mask")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000110 "ProtMaskParticles")
+SubClassOf(obo:CRYOEM_0000110 obo:CRYOEM_0000102)
+
+# Class: obo:CRYOEM_0000111 (ProtOperateParticles)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CRYOEM_0000111 "Other operations on a SetOfParticles not considered on the other branches")
+AnnotationAssertion(rdfs:label obo:CRYOEM_0000111 "ProtOperateParticles")
+SubClassOf(obo:CRYOEM_0000111 obo:CRYOEM_0000102)
 
 
 )
-

@@ -1,12 +1,742 @@
 format-version: 1.2
 data-version: releases/2021-02-08
 ontology: cryoem
-property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Irene Sanchez Lopez" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Carlos Oscar Sorzano" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "Ontology that describes data types and image processing operations in Cryo Electron Microscopy of Single Particles" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Cryo Electron Microscopy ontology" xsd:string
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/3.0/
 property_value: owl:versionInfo "2021-02-08" xsd:string
 
 [Term]
-id: CRYOEM:00000000
-name: root node
+id: CRYOEM:0000001
+name: EMThing
+
+[Term]
+id: CRYOEM:0000002
+name: EMObject
+is_a: CRYOEM:0000001 ! EMThing
+
+[Term]
+id: CRYOEM:0000003
+name: EMProtocol
+is_a: CRYOEM:0000001 ! EMThing
+
+[Term]
+id: CRYOEM:0000004
+name: Acquisition
+def: "Contains acquisition parameters such as magnification, voltage, spherical aberration, amplitude contrast, dose per frame and inital dose, optics group, and beam tilt" []
+is_a: CRYOEM:0000002 ! EMObject
+
+[Term]
+id: CRYOEM:0000005
+name: AtomStruct
+def: "File representing an atomic structure (PDB, mmCIF, ...)" []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000119 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+
+[Term]
+id: CRYOEM:0000006
+name: Coordinate
+def: "x,y coordinate of a particle in a micrograph" []
+is_a: CRYOEM:0000002 ! EMObject
+
+[Term]
+id: CRYOEM:0000007
+name: CTFModel
+def: "Contains a minimum description of the Microscope Contrast Transfer Function with parameters like the two defoci, the defocus angle, phase shift and an image of the Power Spectrum Density" []
+is_a: CRYOEM:0000002 ! EMObject
+
+[Term]
+id: CRYOEM:0000008
+name: DefocusGroup
+def: "Defines a min and maximum defocus that belongs to this group." []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000116 CRYOEM:0000072
+
+[Term]
+id: CRYOEM:0000009
+name: EMSet
+is_a: CRYOEM:0000002 ! EMObject
+
+[Term]
+id: CRYOEM:0000010
+name: FSC
+def: "Fourier Shell Correlation" []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000119 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+
+[Term]
+id: CRYOEM:0000011
+name: Image
+def: "It has an index and filename to point to the physical image. Contains sampling rate. It refers to 2D or 3D." []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000118 CRYOEM:0000014
+
+[Term]
+id: CRYOEM:0000012
+name: NormalMode
+def: "This is the result of a normal mode analysis on an atomic or pseudoatomic structure" []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000116 http://purl.obolibrary.org/obo/CRYOEM_0000005 xsd:string
+
+[Term]
+id: CRYOEM:0000013
+name: Sequence
+def: "Protein sequence" []
+is_a: CRYOEM:0000002 ! EMObject
+property_value: CRYOEM:0000116 http://purl.obolibrary.org/obo/CRYOEM_0000005 xsd:string
+
+[Term]
+id: CRYOEM:0000014
+name: Transform
+def: "Transformation matrix. It is valid for images and volumes" []
+is_a: CRYOEM:0000002 ! EMObject
+
+[Term]
+id: CRYOEM:0000015
+name: Prot2D
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000016
+name: Prot3D
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000017
+name: ProtCoords
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000018
+name: ProtImport
+def: "Any import protocol" []
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000019
+name: ProtMicrographs
+def: "Any operation on a set of micrographs" []
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000020
+name: ProtMovies
+def: "Any protocol that takes a set of movies" []
+is_a: CRYOEM:0000003 ! EMProtocol
+property_value: CRYOEM:0000114 CRYOEM:0000096
+property_value: IAO:0000118 "ProtProcessMovies" xsd:string
+
+[Term]
+id: CRYOEM:0000021
+name: ProtOther
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000022
+name: ProtSets
+def: "Operations on sets" []
+is_a: CRYOEM:0000003 ! EMProtocol
+
+[Term]
+id: CRYOEM:0000023
+name: SetOfAtomStructs
+is_a: CRYOEM:0000009 ! EMSet
+
+[Term]
+id: CRYOEM:0000024
+name: SetOfClasses
+def: "This is a set of classes 2D, 3D or Vol" []
+is_a: CRYOEM:0000009 ! EMSet
+
+[Term]
+id: CRYOEM:0000025
+name: SetOfCoordinates
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000006
+
+[Term]
+id: CRYOEM:0000026
+name: SetOfCTF
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000007
+
+[Term]
+id: CRYOEM:0000027
+name: SetOfDefocusGroup
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000008
+
+[Term]
+id: CRYOEM:0000028
+name: SetOfFSCs
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000010
+
+[Term]
+id: CRYOEM:0000029
+name: SetOfImages
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000112 CRYOEM:0000004
+property_value: CRYOEM:0000120 CRYOEM:0000011
+
+[Term]
+id: CRYOEM:0000030
+name: SetOfNormalModes
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000012
+
+[Term]
+id: CRYOEM:0000031
+name: SetOfSequences
+is_a: CRYOEM:0000009 ! EMSet
+property_value: CRYOEM:0000120 CRYOEM:0000013
+
+[Term]
+id: CRYOEM:0000032
+name: Image2D
+is_a: CRYOEM:0000011 ! Image
+
+[Term]
+id: CRYOEM:0000033
+name: Image3D
+is_a: CRYOEM:0000011 ! Image
+
+[Term]
+id: CRYOEM:0000034
+name: ProtCreateMask2D
+def: "Creates a 2D mask" []
+is_a: CRYOEM:0000015 ! Prot2D
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000071 xsd:string
+
+[Term]
+id: CRYOEM:0000035
+name: ProtParticles
+def: "Protocols dealing with particles and restricted to 2D" []
+is_a: CRYOEM:0000015 ! Prot2D
+
+[Term]
+id: CRYOEM:0000036
+name: ProtAnalysis3D
+def: "Performs any 3D analysis on a set of particles" []
+is_a: CRYOEM:0000016 ! Prot3D
+property_value: CRYOEM:0000114 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000037
+name: ProtFitting3D
+is_a: CRYOEM:0000016 ! Prot3D
+property_value: CRYOEM:0000114 CRYOEM:0000075
+property_value: CRYOEM:0000114 http://purl.obolibrary.org/obo/CRYOEM_0000005 xsd:string
+
+[Term]
+id: CRYOEM:0000038
+name: ProtVolume
+def: "Protocols whose main input is a volume or a set of volumes" []
+is_a: CRYOEM:0000016 ! Prot3D
+property_value: CRYOEM:0000114 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000039
+name: ProtExtractCoords
+def: "Extracts coordinates from a set of particles" []
+is_a: CRYOEM:0000017 ! ProtCoords
+property_value: CRYOEM:0000114 CRYOEM:0000097
+property_value: CRYOEM:0000115 CRYOEM:0000025
+
+[Term]
+id: CRYOEM:0000040
+name: ProtParticlePicking
+def: "Takes a set of micrographs and produces a set of coordinates with particle candidates" []
+is_a: CRYOEM:0000017 ! ProtCoords
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000025
+
+[Term]
+id: CRYOEM:0000041
+name: ProtPickingDifference
+def: "Produces a difference between two sets of coordinates" []
+is_a: CRYOEM:0000017 ! ProtCoords
+property_value: CRYOEM:0000114 CRYOEM:0000025
+property_value: CRYOEM:0000115 CRYOEM:0000025
+
+[Term]
+id: CRYOEM:0000042
+name: ProtImportAverages
+def: "Imports a set of averages" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000094
+
+[Term]
+id: CRYOEM:0000043
+name: ProtImportCoordinates
+def: "Produces a set of coordinates" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000025
+
+[Term]
+id: CRYOEM:0000044
+name: ProtImportCTF
+def: "Imports a set of CTFs and assigns it to a set of micrographs" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000026
+
+[Term]
+id: CRYOEM:0000045
+name: ProtImportMask
+def: "Imports a 2D or 3D mask." []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000071
+property_value: CRYOEM:0000115 CRYOEM:0000076
+
+[Term]
+id: CRYOEM:0000046
+name: ProtImportMicrographs
+def: "Imports a set of micrographs" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000095
+
+[Term]
+id: CRYOEM:0000047
+name: ProtImportMicrographsTiltPairs
+def: "Import micrographs tilt pairs" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000095
+
+[Term]
+id: CRYOEM:0000048
+name: ProtImportMovies
+def: "Imports a set of movies" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000096
+
+[Term]
+id: CRYOEM:0000049
+name: ProtImportParticles
+def: "Import a set of particles" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000050
+name: ProtImportPdb
+def: "Imports an atomic structure" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000005 xsd:string
+
+[Term]
+id: CRYOEM:0000051
+name: ProtImportSequence
+def: "Imports sequence" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000013
+
+[Term]
+id: CRYOEM:0000052
+name: ProtImportVolumes
+def: "Imports a volume" []
+is_a: CRYOEM:0000018 ! ProtImport
+property_value: CRYOEM:0000115 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000053
+name: ProtCTFAssign
+def: "Assigns an already computed set of CTFs to a set of Micrographs or Particles" []
+is_a: CRYOEM:0000019 ! ProtMicrographs
+property_value: CRYOEM:0000114 CRYOEM:0000026
+property_value: CRYOEM:0000114 CRYOEM:0000097
+property_value: CRYOEM:0000115 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000054
+name: ProtCTFMicrographs
+def: "Computes the CTF of a set of micrographs" []
+is_a: CRYOEM:0000019 ! ProtMicrographs
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000026
+
+[Term]
+id: CRYOEM:0000055
+name: ProtPreprocessMicrographs
+def: "Operations like cropping, resizing, inverting contrast, ..." []
+is_a: CRYOEM:0000019 ! ProtMicrographs
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000095
+
+[Term]
+id: CRYOEM:0000056
+name: ProtAlignMovies
+def: "Aligns a set of movies into a set of micrographs" []
+is_a: CRYOEM:0000020 ! ProtMovies
+property_value: CRYOEM:0000115 CRYOEM:0000095
+
+[Term]
+id: CRYOEM:0000057
+name: ProtAverageFrames
+def: "Computes the average of a set of movies into a set of micrographs" []
+is_a: CRYOEM:0000020 ! ProtMovies
+property_value: CRYOEM:0000115 CRYOEM:0000095
+
+[Term]
+id: CRYOEM:0000058
+name: ProtExtractMovieParticles
+def: "Extracts a set of MovieParticles from a set of Movies and a set of Particles" []
+is_a: CRYOEM:0000020 ! ProtMovies
+property_value: CRYOEM:0000114 CRYOEM:0000097
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000106 xsd:string
+
+[Term]
+id: CRYOEM:0000059
+name: ProtMovieAssignGain
+def: "Assigns a gain to a set of movies" []
+is_a: CRYOEM:0000020 ! ProtMovies
+property_value: CRYOEM:0000115 CRYOEM:0000096
+
+[Term]
+id: CRYOEM:0000060
+name: ProtClassesConsensus
+def: "Creates a consensus of a set of classes" []
+is_a: CRYOEM:0000021 ! ProtOther
+property_value: CRYOEM:0000114 CRYOEM:0000024
+property_value: CRYOEM:0000115 CRYOEM:0000024
+
+[Term]
+id: CRYOEM:0000061
+name: ProtCreateFSC
+def: "Creates an FSC" []
+is_a: CRYOEM:0000021 ! ProtOther
+property_value: CRYOEM:0000115 CRYOEM:0000010
+
+[Term]
+id: CRYOEM:0000062
+name: ProtSplitSet
+def: "Splits a set into several pieces" []
+is_a: CRYOEM:0000022 ! ProtSets
+
+[Term]
+id: CRYOEM:0000063
+name: ProtSubSet
+def: "Computes a subset of a set" []
+is_a: CRYOEM:0000022 ! ProtSets
+
+[Term]
+id: CRYOEM:0000064
+name: ProtUnionSet
+def: "Computes the union of several sets" []
+is_a: CRYOEM:0000022 ! ProtSets
+
+[Term]
+id: CRYOEM:0000065
+name: SetOfClasses2D
+is_a: CRYOEM:0000024 ! SetOfClasses
+property_value: CRYOEM:0000120 http://purl.obolibrary.org/obo/CRYOEM_0000104 xsd:string
+
+[Term]
+id: CRYOEM:0000066
+name: SetOfClasses3D
+is_a: CRYOEM:0000024 ! SetOfClasses
+property_value: CRYOEM:0000120 http://purl.obolibrary.org/obo/CRYOEM_0000105 xsd:string
+
+[Term]
+id: CRYOEM:0000067
+name: SetOfClassesVol
+is_a: CRYOEM:0000024 ! SetOfClasses
+property_value: CRYOEM:0000120 CRYOEM:0000107
+
+[Term]
+id: CRYOEM:0000068
+name: SetOfImages2D
+is_a: CRYOEM:0000029 ! SetOfImages
+property_value: CRYOEM:0000120 CRYOEM:0000032
+
+[Term]
+id: CRYOEM:0000069
+name: SetOfImages3D
+is_a: CRYOEM:0000029 ! SetOfImages
+property_value: CRYOEM:0000120 CRYOEM:0000033
+
+[Term]
+id: CRYOEM:0000070
+name: Average
+is_a: CRYOEM:0000032 ! Image2D
+
+[Term]
+id: CRYOEM:0000071
+name: Mask
+def: "Mask 2D" []
+is_a: CRYOEM:0000032 ! Image2D
+
+[Term]
+id: CRYOEM:0000072
+name: Micrograph
+is_a: CRYOEM:0000032 ! Image2D
+property_value: CRYOEM:0000112 CRYOEM:0000004
+
+[Term]
+id: CRYOEM:0000073
+name: Movie
+is_a: CRYOEM:0000032 ! Image2D
+property_value: CRYOEM:0000112 CRYOEM:0000004
+
+[Term]
+id: CRYOEM:0000074
+name: Particle
+is_a: CRYOEM:0000032 ! Image2D
+property_value: CRYOEM:0000112 CRYOEM:0000004
+property_value: CRYOEM:0000113 CRYOEM:0000006
+property_value: CRYOEM:0000118 CRYOEM:0000014
+property_value: CRYOEM:0000121 CRYOEM:0000007
+
+[Term]
+id: CRYOEM:0000075
+name: Volume
+def: "Map" []
+is_a: CRYOEM:0000033 ! Image3D
+
+[Term]
+id: CRYOEM:0000076
+name: VolumeMask
+def: "Mask 3D" []
+is_a: CRYOEM:0000033 ! Image3D
+
+[Term]
+id: CRYOEM:0000077
+name: ProtCreateMask
+def: "Special protocol used in batch mode" []
+is_a: CRYOEM:0000034 ! ProtCreateMask2D
+
+[Term]
+id: CRYOEM:0000078
+name: ProtAnalysis2D
+def: "Performs some other kind of 2D analysis" []
+is_a: CRYOEM:0000035 ! ProtParticles
+property_value: CRYOEM:0000114 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000079
+name: ProtExtractParticles
+def: "Takes a set of micrographs and coordinates and extract the particles" []
+is_a: CRYOEM:0000035 ! ProtParticles
+property_value: CRYOEM:0000114 CRYOEM:0000025
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000080
+name: ProtClassify3D
+is_a: CRYOEM:0000036 ! ProtAnalysis3D
+property_value: CRYOEM:0000115 CRYOEM:0000066
+
+[Term]
+id: CRYOEM:0000081
+name: ProtInitialVolume
+def: "The input may be a set of particles or a set of averages (which can be regarded as a summary of a set of particles)" []
+is_a: CRYOEM:0000036 ! ProtAnalysis3D
+property_value: CRYOEM:0000114 CRYOEM:0000094
+property_value: CRYOEM:0000115 CRYOEM:0000075
+property_value: CRYOEM:0000115 CRYOEM:0000098
+
+[Term]
+id: CRYOEM:0000082
+name: ProtReconstruct3D
+def: "Reconstruct a map from a set of particles" []
+is_a: CRYOEM:0000036 ! ProtAnalysis3D
+property_value: CRYOEM:0000115 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000083
+name: ProtRefine3D
+def: "Refine the angular alignment of a set of particles" []
+is_a: CRYOEM:0000036 ! ProtAnalysis3D
+property_value: CRYOEM:0000115 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000084
+name: ProtAlignVolume
+def: "Align volumes" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000115 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000085
+name: ProtCreateMask3D
+def: "Create a 3D mask" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000115 CRYOEM:0000076
+
+[Term]
+id: CRYOEM:0000086
+name: ProtFilterVolumes
+def: "Filter volumes" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000115 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000087
+name: ProtMaskVolumes
+def: "Apply a mask to a volume (the mask can be defined by a description, for instance, a geometrical object)" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000114 http://purl.obolibrary.org/obo/CRYOEM_0000076 xsd:string
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+
+[Term]
+id: CRYOEM:0000088
+name: ProtPreprocessVolumes
+def: "Preprocess volumes (filters, ...)" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+
+[Term]
+id: CRYOEM:0000089
+name: ProtOperateVolumes
+def: "Performs an operation with one or two volumes (calculator)" []
+is_a: CRYOEM:0000038 ! ProtVolume
+property_value: CRYOEM:0000115 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+
+[Term]
+id: CRYOEM:0000090
+name: ProtParticlePickingAuto
+def: "A subclass of particle picking algorithms that can perform this operation completely automatically." []
+is_a: CRYOEM:0000040 ! ProtParticlePicking
+
+[Term]
+id: CRYOEM:0000091
+name: ProtImportCoordinatesPairs
+def: "Importing coordinates for tilt pairs" []
+is_a: CRYOEM:0000043 ! ProtImportCoordinates
+
+[Term]
+id: CRYOEM:0000092
+name: ProtSubSetByMic
+def: "Computes a subset of particles according to a set of micrographs" []
+is_a: CRYOEM:0000063 ! ProtSubSet
+property_value: CRYOEM:0000114 CRYOEM:0000095
+property_value: CRYOEM:0000114 CRYOEM:0000097
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000093
+name: ProtUserSubSet
+def: "Computes a subset of another set by a graphical intervention of the user" []
+is_a: CRYOEM:0000063 ! ProtSubSet
+
+[Term]
+id: CRYOEM:0000094
+name: SetOfAverages
+def: "This is a set of 2D averages" []
+is_a: CRYOEM:0000068 ! SetOfImages2D
+property_value: CRYOEM:0000120 CRYOEM:0000074
+
+[Term]
+id: CRYOEM:0000095
+name: SetOfMicrographs
+is_a: CRYOEM:0000068 ! SetOfImages2D
+property_value: CRYOEM:0000120 CRYOEM:0000072
+
+[Term]
+id: CRYOEM:0000096
+name: SetOfMovies
+is_a: CRYOEM:0000068 ! SetOfImages2D
+property_value: CRYOEM:0000120 CRYOEM:0000073
+
+[Term]
+id: CRYOEM:0000097
+name: SetOfParticles
+is_a: CRYOEM:0000068 ! SetOfImages2D
+property_value: CRYOEM:0000120 CRYOEM:0000074
+
+[Term]
+id: CRYOEM:0000098
+name: SetOfVolumes
+is_a: CRYOEM:0000069 ! SetOfImages3D
+
+[Term]
+id: CRYOEM:0000099
+name: MovieParticle
+def: "This is a set of images corresponding to a single particle in each ones of the frames." []
+is_a: CRYOEM:0000074 ! Particle
+
+[Term]
+id: CRYOEM:0000100
+name: ProtAlign2D
+def: "Aligns a set of 2D images" []
+is_a: CRYOEM:0000078 ! ProtAnalysis2D
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000101
+name: ProtClassify2D
+def: "Classifies a set of particles in 2D classes" []
+is_a: CRYOEM:0000078 ! ProtAnalysis2D
+property_value: CRYOEM:0000115 CRYOEM:0000065
+
+[Term]
+id: CRYOEM:0000102
+name: ProtProcessParticles
+def: "Any protocol that applies a transformation to a SetOfParticles" []
+is_a: CRYOEM:0000078 ! ProtAnalysis2D
+property_value: CRYOEM:0000115 CRYOEM:0000097
+
+[Term]
+id: CRYOEM:0000103
+name: ProtExtractParticlesPair
+def: "Extracts particles from a set of tilt pairs" []
+is_a: CRYOEM:0000079 ! ProtExtractParticles
+
+[Term]
+id: CRYOEM:0000104
+name: Class2D
+def: "This is a set of particles and its 2D representative" []
+is_a: CRYOEM:0000097 ! SetOfParticles
+property_value: CRYOEM:0000117 CRYOEM:0000070
+property_value: CRYOEM:0000120 CRYOEM:0000074
+
+[Term]
+id: CRYOEM:0000105
+name: Class3D
+def: "This is a set of particles and its 3D representative" []
+is_a: CRYOEM:0000097 ! SetOfParticles
+property_value: CRYOEM:0000117 http://purl.obolibrary.org/obo/CRYOEM_0000075 xsd:string
+property_value: CRYOEM:0000120 CRYOEM:0000074
+
+[Term]
+id: CRYOEM:0000106
+name: SetOfMovieParticles
+is_a: CRYOEM:0000097 ! SetOfParticles
+property_value: CRYOEM:0000120 CRYOEM:0000099
+
+[Term]
+id: CRYOEM:0000107
+name: ClassVol
+def: "This is a set of volumes and its 3D representative" []
+is_a: CRYOEM:0000098 ! SetOfVolumes
+property_value: CRYOEM:0000117 CRYOEM:0000075
+
+[Term]
+id: CRYOEM:0000108
+name: ProtAlignmentAssign
+def: "Assigns a 2D alignment to a SetOfParticles" []
+is_a: CRYOEM:0000100 ! ProtAlign2D
+
+[Term]
+id: CRYOEM:0000109
+name: ProtFilterParticles
+def: "Applies a filter" []
+is_a: CRYOEM:0000102 ! ProtProcessParticles
+
+[Term]
+id: CRYOEM:0000110
+name: ProtMaskParticles
+def: "Applies a mask" []
+is_a: CRYOEM:0000102 ! ProtProcessParticles
+
+[Term]
+id: CRYOEM:0000111
+name: ProtOperateParticles
+def: "Other operations on a SetOfParticles not considered on the other branches" []
+is_a: CRYOEM:0000102 ! ProtProcessParticles
 

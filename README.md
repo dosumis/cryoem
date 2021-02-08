@@ -1,9 +1,8 @@
 [![Build Status](https://travis-ci.org/I2PC/cryoem.svg?branch=master)](https://travis-ci.org/I2PC/cryoem)
-[![DOI](https://zenodo.org/badge/13996/I2PC/cryoem.svg)](https://zenodo.org/badge/latestdoi/13996/I2PC/cryoem)
 
 # Cryo Electron Microscopy ontology
 
-This ontology... YOUR DESCRIPTION HERE
+This ontology describes data types and image processing operations in Cryo Electron Microscopy of Single Particles.
 
 More information can be found at http://obofoundry.org/ontology/cryoem
 

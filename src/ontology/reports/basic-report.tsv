@@ -1,0 +1,112 @@
+?cls	?def	?xrefs
+<http://purl.obolibrary.org/obo/CRYOEM_0000053>	"Assigns an already computed set of CTFs to a set of Micrographs or Particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000059>	"Assigns a gain to a set of movies"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000109>	"Applies a filter"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000087>	"Apply a mask to a volume (the mask can be defined by a description, for instance, a geometrical object)"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000026>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000100>	"Aligns a set of 2D images"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000070>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000049>	"Import a set of particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000057>	"Computes the average of a set of movies into a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000062>	"Splits a set into several pieces"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000050>	"Imports an atomic structure"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000042>	"Imports a set of averages"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000002>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000039>	"Extracts coordinates from a set of particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000066>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000030>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000035>	"Protocols dealing with particles and restricted to 2D"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000009>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000106>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000013>	"Protein sequence"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000008>	"Defines a min and maximum defocus that belongs to this group."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000037>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000025>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000084>	"Align volumes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000012>	"This is the result of a normal mode analysis on an atomic or pseudoatomic structure"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000094>	"This is a set of 2D averages"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000055>	"Operations like cropping, resizing, inverting contrast, ..."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000044>	"Imports a set of CTFs and assigns it to a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000001>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000006>	"x,y coordinate of a particle in a micrograph"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000065>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000004>	"Contains acquisition parameters such as magnification, voltage, spherical aberration, amplitude contrast, dose per frame and inital dose, optics group, and beam tilt"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000046>	"Imports a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000034>	"Creates a 2D mask"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000019>	"Any operation on a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000076>	"Mask 3D"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000080>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000063>	"Computes a subset of a set"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000088>	"Preprocess volumes (filters, ...)"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000110>	"Applies a mask"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000107>	"This is a set of volumes and its 3D representative"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000011>	"It has an index and filename to point to the physical image. Contains sampling rate. It refers to 2D or 3D."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000058>	"Extracts a set of MovieParticles from a set of Movies and a set of Particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000105>	"This is a set of particles and its 3D representative"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000108>	"Assigns a 2D alignment to a SetOfParticles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000103>	"Extracts particles from a set of tilt pairs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000018>	"Any import protocol"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000102>	"Any protocol that applies a transformation to a SetOfParticles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000007>	"Contains a minimum description of the Microscope Contrast Transfer Function with parameters like the two defoci, the defocus angle, phase shift and an image of the Power Spectrum Density"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000023>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000082>	"Reconstruct a map from a set of particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000090>	"A subclass of particle picking algorithms that can perform this operation completely automatically."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000092>	"Computes a subset of particles according to a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000022>	"Operations on sets"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000024>	"This is a set of classes 2D, 3D or Vol"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000043>	"Produces a set of coordinates"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000020>	"Any protocol that takes a set of movies"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000036>	"Performs any 3D analysis on a set of particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000041>	"Produces a difference between two sets of coordinates"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000098>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000048>	"Imports a set of movies"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000074>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000029>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000040>	"Takes a set of micrographs and produces a set of coordinates with particle candidates"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000017>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000069>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000075>	"Map"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000056>	"Aligns a set of movies into a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000071>	"Mask 2D"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000054>	"Computes the CTF of a set of micrographs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000033>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000038>	"Protocols whose main input is a volume or a set of volumes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000021>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000097>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000085>	"Create a 3D mask"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000073>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000052>	"Imports a volume"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000005>	"File representing an atomic structure (PDB, mmCIF, ...)"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000028>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000016>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000083>	"Refine the angular alignment of a set of particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000047>	"Import micrographs tilt pairs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000077>	"Special protocol used in batch mode"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000111>	"Other operations on a SetOfParticles not considered on the other branches"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000099>	"This is a set of images corresponding to a single particle in each ones of the frames."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000093>	"Computes a subset of another set by a graphical intervention of the user"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000051>	"Imports sequence"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000060>	"Creates a consensus of a set of classes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000079>	"Takes a set of micrographs and coordinates and extract the particles"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000068>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000032>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000096>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000072>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000081>	"The input may be a set of particles or a set of averages (which can be regarded as a summary of a set of particles)"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000086>	"Filter volumes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000089>	"Performs an operation with one or two volumes (calculator)"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000027>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000015>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000003>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000091>	"Importing coordinates for tilt pairs"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000045>	"Imports a 2D or 3D mask."	
+<http://purl.obolibrary.org/obo/CRYOEM_0000010>	"Fourier Shell Correlation"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000078>	"Performs some other kind of 2D analysis"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000101>	"Classifies a set of particles in 2D classes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000014>	"Transformation matrix. It is valid for images and volumes"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000064>	"Computes the union of several sets"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000067>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000104>	"This is a set of particles and its 2D representative"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000061>	"Creates an FSC"	
+<http://purl.obolibrary.org/obo/CRYOEM_0000031>		
+<http://purl.obolibrary.org/obo/CRYOEM_0000095>		

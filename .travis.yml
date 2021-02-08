@@ -18,10 +18,8 @@ script: cd src/ontology && sh run.sh make test
 branches:
   only:
     - master
-    - test-travis
 
-### Add your own lists here
-### See https://github.com/INCATools/ontology-development-kit/issues/35
 notifications:
   email:
-    - obo-ci-reports-all@groups.io
+    - coss@cnb.csic.es
+    - isanchez@cnb.csic.es
