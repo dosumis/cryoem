@@ -1,0 +1,12 @@
+format-version: 1.2
+data-version: cryoem/releases/2021-02-08/cryoem-full.owl
+ontology: cryoem/cryoem-full
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Cryo Electron Microscopy ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-02-08" xsd:string
+
+[Term]
+id: CRYOEM:00000000
+name: root node
+
